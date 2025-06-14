@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { BiSearch } from "react-icons/bi";
 
-const API_KEY = "AIzaSyAGk-pIgMUR7E0MNrpRPwkroqaCo6VJqV0";
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const App = () => {
   const [query, setQuery] = useState("");
