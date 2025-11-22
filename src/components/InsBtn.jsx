@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { MdOutlineInstallMobile } from 'react-icons/md';
 
-function InsBtn() {  const [promptEvent, setPromptEvent] = useState(null);
+function InsBtn({promptEvent, setPromptEvent}) {  
 
   useEffect(() => {
     window.addEventListener("beforeinstallprompt", (e) => {
