@@ -94,13 +94,12 @@ console.log(query);
           </div>
           <div className="flex gap-2 text-black h-full justify-center items-center ml-5">
             <BiSearch onClick={() =>setSearchDiv(true)} className="size-8 px-1 " />
-           {promptEvent===null ? <div className="flex bg-zinc-200 h-fit rounded-full px-4 items-center text-sm font-normal py-1.5 gap-1">
+            <div className="flex bg-zinc-200 h-fit rounded-full px-4 items-center text-sm font-normal py-1.5 gap-1">
               <GoPlus  className="size-5 " />
               Cerate
-            </div> :
-             <InsBtn promptEvent={promptEvent} setPromptEvent={setPromptEvent}/>}
+            </div>
           </div>
-           
+            <InsBtn promptEvent={promptEvent} setPromptEvent={setPromptEvent}/>
           <div className="p-1 shadow  rounded-full">
             <FaUserTie className="size-6 p-0.5 text-zinc-900" />
           </div>

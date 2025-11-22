@@ -8,7 +8,7 @@ function InsBtn({promptEvent, setPromptEvent}) {
       e.preventDefault();
       setPromptEvent(e);
     });
-  }, []);
+  }, );
 
   const install = () => {
     if (!promptEvent) return;
