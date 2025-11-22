@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { MdOutlineInstallMobile } from 'react-icons/md';
 
 function InsBtn() {  const [promptEvent, setPromptEvent] = useState(null);
 
@@ -17,12 +18,10 @@ function InsBtn() {  const [promptEvent, setPromptEvent] = useState(null);
   if (!promptEvent) return null;
 
   return (
-    <button
-      style={{ padding: "10px", background: "#2563eb", color: "#fff", borderRadius: "8px" }}
-      onClick={install}
-    >
-      Install App
-    </button>
+     <div onClick={install} className="flex bg-white text-blue-500 h-fit rounded-full px-4 items-center text-sm font-normal py-1.5 gap-1">
+                  <MdOutlineInstallMobile  className="size-5 " />
+                   Install
+                </div>
   );
 }
 
